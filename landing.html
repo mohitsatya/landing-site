@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Mains Crash Course 2025 (Revise, Analyse, and Write)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: right;
+        }
+
+        .h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .underline {
+            width: 100px;
+            height: 5px;
+            background: #ff9800;
+            margin: 5px auto 20px;
+            border-radius: 5px;
+        }
+
+        .description {
+            font-size: 16px;
+            color: #555;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #222;
+            margin-top: 19px;
+            text-align: left;
+        }
+
+        .start-date {
+            color: #ff9800;
+            font-size: 18px;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .schedule-btn {
+            background: white;
+            border: 2px solid black;
+            color: black;
+        }
+
+        .enroll-btn {
+            background: #ff9800;
+            color: white;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .mentors {
+                flex-direction: column;
+                align-items: left;
+            }
+        }
+
+        .bottom-heading {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        /* Feature Box Section */
+        .features-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .feature-box {
+            width: 350px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 1px solid #007bff;
+        }
+
+        .feature-box img {
+            width: 60px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* UPSC Mentorship Section */
+        .mentorship-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #e8f3ff;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+        }
+
+        .mentorship-text {
+            width: 55%;
+        }
+
+        .mentorship-text h2 {
+            color: #1d4ed8;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .mentorship-text p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .mentorship-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .mentorship-form input {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .mentorship-form button {
+            background: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .mentorship-form button:hover {
+            background: #e68900;
+        }
+
+        .mentorship-image {
+            width: 40%;
+            text-align: center;
+        }
+
+        .mentorship-image img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-section,
+            .form-section {
+                width: 100%;
+                padding: 0;
+            }
+
+            .features-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .mentorship-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .mentorship-text,
+            .mentorship-image {
+                width: 100%;
+            }
+
+            .mentorship-form {
+                justify-content: center;
+            }
+        }
+
+        .batch-details {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .batch-details h2 {
+            color: #007bff;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .batch-details p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .batch-details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .batch-details ul li {
+            font-size: 16px;
+            color: #333;
+            margin: 5px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .demo-class {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .demo-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .video-container iframe {
+            width: 560px;
+            height: 315px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .demo-button-container {
+            margin-top: 15px;
+            align-items: center;
+        }
+
+        .demo-button {
+            background-color: #ff9800;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .demo-button img {
+            width: 20px;
+            height: auto;
+        }
+
+        .demo-button:hover {
+            background-color: #e68900;
+        }
+
+        @media (max-width: 768px) {
+            .video-container iframe {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .secondsec {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonial-slider {
+            max-width: 900px;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .secondleft {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .testimonial {
+            min-width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .testimonial p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .testimonial h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #007bff;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        #flexrow {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .faq-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-question {
+            background-color: #ddd;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background-color: #ccc;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            background-color: #fff;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .faq-item.active .arrow {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .courses-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .courses-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .courses-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .course-card {
+            background-color: #fff;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .course-image {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .course-content {
+            padding: 15px;
+        }
+
+        .course-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .courses-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>UPSC MAINS CRASH COURSE 2025</h1>
+
+        <div class="underline"></div>
+
+        <div class="container secondsec">
+
+            <div class="secondleft">
+                <p class="description">Aspire IAS’s UPSC Mains Crash Course helps you score 450+ in GS Papers with
+                    structured
+                    learning, ethics essays, case studies & expert feedback.
+                </p>
+                <p class="price">₹ 19,999 <span style="font-size: 16px;">+taxes</span></p>
+                <p class="start-date">📅 Starting from 10th June 2025</p>
+
+                <div class="buttons" id="flexrow">
+                    <a href="#" class="button schedule-btn">Detailed Schedule</a>
+                    <a href="#" class="button enroll-btn">Enroll Now ⚡</a>
+                </div>
+            </div>
+            <div class="image-section img">
+                <img src="images/mohit.webp">
+            </div>
+        </div>
+        <div class="bottom-heading">What Makes This Course Stand Out?</div>
+
+        <div class="features-container">
+            <div class="feature-box">
+                <img src="images/mohit.webp">
+                <p>45-50 Targeted Sessions (240-250 Hours)</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/mohit.webp">
+                <p>Daily Answer Writing Practice with Ankit Sir</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/mohit.webp">
+                <p>160 Q/A Discussion in Class</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/mohit.webp">
+                <p>12 Exam-Oriented Test Practices (4 Topic-Wise + 4 Paper-Wise + 4 UPSC Simulation Conditions)</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/mohit.webp">
+                <p>Smart UPSC Learning Kit</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/mohit.webp">
+                <p>3 In-Depth Essay Writing Sessions</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/mohit.webp">
+                <p>One-on-One Mains Mentorship</p>
+            </div>
+        </div>
+
+        <div class="mentorship-container">
+            <div class="mentorship-text">
+                <h2>Crack UPSC with our Expert Guidance</h2>
+                <p>Get a Callback by our UPSC Expert!</p>
+                <div class="mentorship-form">
+                    <span>+91</span>
+                    <input type="tel" placeholder="Your mobile number" required>
+                    <button>Get Free Mentorship</button>
+                </div>
+            </div>
+            <div class="mentorship-image">
+                <img src="images/Screenshot 2025-04-04 124531.png">
+            </div>
+        </div>
+        <!-- Existing Content Here -->
+
+        <div class="batch-details">
+            <h2>Batch Details</h2>
+            <p><strong>Batch Name:</strong> UPSC Mains Crash Course 2025</p>
+            <p><strong>Batch Mode:</strong> Online & Recorded</p>
+            <p><strong>Batch Starts From:</strong> 10th April 2025</p>
+            <p><strong>Course Duration:</strong> 3 Months</p>
+            <p><strong>Class Timings:</strong> 1:30 PM - 5:30 PM</p>
+            <!-- Existing Content Here -->
+
+            <div class="batch-details">
+                <h2>Key Features:</h2>
+                <ul>
+                    <li>Comprehensive Coverage of Mains Syllabus</li>
+                    <li>Answer Writing Practice with Evaluation</li>
+                    <li>Personalized Mentorship & Doubt Sessions</li>
+                    <li>Special Ethics & Essay Workshops</li>
+                    <li>Weekly Test Series for Performance Tracking</li>
+                </ul>
+            </div>
+            <div class="demo-class">
+                <h2 class="demo-title">Demo Class</h2>
+                <div class="video-container">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/jRSIDrzJizQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="demo-button-container">
+                    <button class="demo-button">View Demo Notes <img src="images/mohit.webp" alt="icon"></button>
+                </div>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <img src="images/mohit.webp" alt="Akash Chaudhary">
+                        <p>"The mentorship was truly transformative. The structured approach helped me a lot in clearing
+                            CSE."
+                        </p>
+                        <h4>Akash Chaudhary, AIR 329 (CSE 2022)</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="images/mohit.webp" alt="Mayur Hazarika">
+                        <p>"A perfect blend of mentorship and answer-writing practice. Highly recommended!"</p>
+                        <h4>Mayur Hazarika, AIR 5 (CSE 2022)</h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="images/mohit.webp" alt="Saurabh Sharma">
+                        <p>"Personalized guidance and test series made all the difference in my preparation."</p>
+                        <h4>Saurabh Sharma, AIR 23 (CSE 2023)</h4>
+                    </div>
+                </div>
+                <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <script>
+                let index = 0;
+                function moveSlide(step) {
+                    const container = document.querySelector(".testimonial-container");
+                    const testimonials = document.querySelectorAll(".testimonial");
+                    index += step;
+                    if (index >= testimonials.length) index = 0;
+                    if (index < 0) index = testimonials.length - 1;
+                    container.style.transform = `translateX(-${index * 100}%)`;
+                }
+                setInterval(() => moveSlide(1), 5000); // Auto-slide every 5 seconds
+            </script>
+            <div class="courses-container">
+                <div class="courses-title">Other Foundation Courses</div>
+
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <img src="images/mohit.webp" alt="Essay Simplified" class="course-image">
+                        <div class="course-content">
+                            <div class="course-title">Essay Simplified</div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <img src="images/mohit.webp" alt="Geography Optional Crash Course" class="course-image">
+                        <div class="course-content">
+                            <div class="course-title">Geography Optional Crash Course</div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <img src="images/mohit.webp" alt="Daily Answer Writing" class="course-image">
+                        <div class="course-content">
+                            <div class="course-title">Daily Answer Writing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-title">FAQs – Aspire IAS UPSC Mains Crash Course 2025</div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the Aspire IAS UPSC Mains Crash Course?
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        The UPSC Mains Crash Course is an intensive program designed to help aspirants score 450+ marks
+                        in GS Papers 1, 2, 3 & 4 through structured learning, daily answer writing, essay sessions, and
+                        expert mentorship.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How will this course improve my answer writing skills?
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        You will get daily answer writing practice with Ankit Sir, covering clarity, coherence, and
+                        precision. Additionally, 12 test practices (topic-wise, paper-wise, and full-length simulations)
+                        will refine your writing with expert feedback.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the duration of the course?
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        The course includes 45-50 targeted sessions (240-250 hours) spread over a structured timeline.
+                        You will also get recorded lectures available for 3 months to help with revisions.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the "RAW" UPSC Mains Crash Course?
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        RAW stands for Revise, Analyze, and Write—a structured approach to systematic revision of GS
+                        Papers 1-4 and Essay, focusing on improving analytical thinking, conceptual clarity, and
+                        structured answer writing.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What study materials will I get in this course?
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        You will receive a Smart UPSC Learning Kit, which includes mind maps, detailed Q&A booklets
+                        (PDFs), and ethics-oriented essays & case studies to improve analytical responses.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How will the mentorship program help me?
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        The One-on-One Mains Mentorship provides a personalized roadmap for your preparation. You will
+                        receive targeted feedback, strategy discussions, and individual guidance to improve weak areas.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Will there be live classes or recorded sessions?
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        The course includes live Zoom classes, and recorded sessions will be available in "My Account"
+                        for revision. The course structure ensures flexibility to suit different learning needs.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">How do I enroll, and what happens after enrollment?
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        You can enroll instantly using your username & password. After enrollment, you will get access
+                        to live classes, study materials, test series, and mentorship support via WhatsApp, email, or
+                        live discussions.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Why choose Aspire IAS for UPSC Mains Preparation?
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-answer">
+                        Aspire IAS is India's leading UPSC Mains coaching institute, known for expert mentorship,
+                        personalized guidance, daily answer writing, essay sessions, and structured learning with smart
+                        study materials.
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.querySelectorAll('.faq-question').forEach((item) => {
+                    item.addEventListener('click', () => {
+                        const parent = item.parentElement;
+                        parent.classList.toggle('active');
+                    });
+                });
+            </script>
+</body>
+
+</html>
