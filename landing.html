@@ -74,7 +74,7 @@
             font-weight: bold;
             cursor: pointer;
             text-decoration: none;
-            margin: 10px;
+            margin-right: 20px;
         }
 
         .schedule-btn {
@@ -93,6 +93,18 @@
             .mentors {
                 flex-direction: column;
                 align-items: left;
+            }
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 540px) {
+            .mentors {
+                flex-direction: column;
+                align-items: left;
+            }
+
+            .secondsec {
+                flex-direction: column;
             }
         }
 
@@ -420,8 +432,8 @@
         #flexrow {
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            /* justify-content: center;
+            align-items: center; */
         }
 
         body {
@@ -544,9 +556,48 @@
                 align-items: center;
             }
         }
+
+        /* MOBILE RESPONSIVE */
+
+        @media (max-width: 600px) {
+
+            .secondsec,
+            .mentorship-container,
+            .features-container,
+            .courses-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .secondsec {
+                flex-direction: column-reverse;
+            }
+
+            .image-section img {
+                max-width: 100%;
+                border-radius: 10px;
+                text-align: right;
+            }
+
+            .course-card {
+                width: 100%;
+            }
+
+            .container {
+                padding: 0;
+            }
+
+            .mentorship-form {
+                flex-direction: column;
+            }
+
+            .feature-box {
+                width: 100%;
+            }
+        }
     </style>
 </head>
-</style>
+
 </head>
 
 <body>
@@ -824,6 +875,8 @@
                     });
                 });
             </script>
+        </div>
+    </div>
 </body>
 
 </html>
